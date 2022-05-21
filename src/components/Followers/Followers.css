@@ -1,0 +1,75 @@
+.followers-list-container{
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: white;
+    position: relative;
+    width: 50%;
+}
+.followers-title{
+ top: -35px;
+  position: absolute;
+  
+}
+.followers-title p{
+    background-color: white;
+    margin-bottom: 0;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 5px;
+    line-height: 20px;
+    padding: 6px;
+ }
+ .followers-list{
+     background-color: white;
+     padding: 30px 20px;
+     height: 20rem;
+     overflow: scroll;
+ }
+
+.followers-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 3rem;
+    margin-top: 10px;
+}
+
+.followers-img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+     border-radius: 50%;
+}
+.followers-heading-text{
+    line-height: 10px;
+    margin: 50px 10px 40px 10px;
+    font-family: Poppins;
+}
+.followers-heading-text h3{
+    font-family: Poppins;
+    color: var(--clr-grey-3);
+    font-size: 16px;
+}
+.followers-heading-text a{
+    font-size: 17px;
+    color: var(--clr-grey-5);
+    font-family: Poppins;
+}
+
+@media screen and (max-width:890px) {
+    .followers-list-container{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .followers-title p{
+        font-size: 18px;
+    }
+}

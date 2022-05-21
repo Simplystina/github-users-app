@@ -1,0 +1,9 @@
+.language-chart{
+    width: 45%;
+}
+
+@media screen and (max-width:890px) {
+    .language-chart{
+        width: 100%;
+    }
+}

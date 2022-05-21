@@ -1,0 +1,150 @@
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.navbar-info{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.navbar-info h3{
+    font-family: Poppins;
+    font-size: 27px;
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.user-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.loading-image{
+    width: 20rem;
+  height: 20rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.search-field{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.search-input{
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    width: 70%;
+    outline: none;
+}
+.search-input::placeholder{
+    font-size: 20px;
+    font-style: Poppins;
+}
+
+.search-field h3{
+    color: var(--clr-grey-5);
+    text-align: right;
+}
+
+.content{
+    display: flex;
+     justify-content: space-between;
+    width: 95%;
+    margin: 3rem auto;
+}
+
+.content2{
+    display: flex;
+     justify-content: space-between;
+    width: 95%;
+    margin: 3rem auto;
+}
+
+.warning-text{
+    color: rgba(255, 0, 0, 0.76);
+    font-size: 25px;
+   margin-left: 40px;
+   font-family: Poppins;
+}
+
+@media screen and (max-width:890px) {
+    .content,.content2{
+        flex-direction: column;
+    }
+    .dashboard-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:692px) {
+    .search-input::placeholder{
+        font-size: 16px;
+        font-style: Poppins;
+    }
+    .search-field h3{
+        font-size: 16px;
+    }
+    .navbar-info h3{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:692px) {
+    .search-input::placeholder{
+        font-size: 12px;
+        font-style: Poppins;
+    }
+    .search-field h3{
+        font-size: 13px;
+    }
+    
+    .btn{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .search-field{
+        flex-direction: column;
+    }
+    .search-field h3{
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .user-image{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .navbar-info h3{
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,142 @@
+.users-container{
+    margin-right: 10px;
+    width: 50%;
+}
+.user-content{
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 0;
+}
+.user-title{
+   margin-bottom: 0;
+}
+.user-title p{
+   background-color: white;
+   margin-bottom: 0;
+   width: 70px;
+   height: 30px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 800;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+.user-heading img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.user-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-btn{
+    background-color: white;
+    color: var(--clr-primary-5);
+    border: none;
+    outline: none;
+}
+
+.user-heading-content{
+    display: flex;
+    align-items: center;
+}
+.user-heading-text{
+    line-height: 10px;
+    margin: 20px;
+    font-family: Poppins;
+}
+.user-heading-text h3{
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.user-btn{
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--clr-primary-5);
+}
+
+
+.user-bio{
+    font-family: Poppins;
+    color: var(--clr-grey-5);
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 25px;
+}
+.user-heading-name{
+    font-family: Poppins;
+    color: var(--clr-grey-3);
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.user-content span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-icon{
+    font-size: 21px;
+    color: var(--clr-grey-6);
+}
+.user-content span p{
+   margin: 0 0 0 10px;
+   font-family: Poppins;
+   font-size: 20px;
+}
+.web-link{
+    color: var(--clr-primary-5);
+}
+
+@media screen and (max-width:890px) {
+    .users-container{
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    .users-container{
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+    .user-title p{
+        font-size: 18px;
+     }
+     .user-heading img{
+        width: 120px;
+        height: 120px; 
+    }
+    .user-heading-text h3{
+        font-size: 16px;
+    }
+    .user-bio{
+        font-size: 14px;
+    }
+    .user-btn{
+        padding: 9px 20px;
+    }
+    .user-icon{
+        font-size: 16px;
+    }
+    .user-content span p{
+       font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px) {
+   .user-heading{
+       flex-direction: column;
+       align-items: unset;
+   }
+   .user-btn{
+      margin-bottom: 20px;
+      padding: 15px 50px;
+      border-radius: 20px;
+  }
+}

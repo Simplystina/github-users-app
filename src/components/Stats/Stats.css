@@ -1,0 +1,18 @@
+.container h3{
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.container{
+    background-color: white;
+    width: 50%;
+}
+
+.graph{
+    width: 50%;
+    margin: 0 auto;
+}
+

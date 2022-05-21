@@ -1,0 +1,8 @@
+.popular-chart{
+    width: 45%;
+}
+@media screen and (max-width:890px) {
+    .popular-chart{
+        width: 100%;
+    }
+}
