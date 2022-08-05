@@ -1,6 +1,5 @@
-import axios from 'axios'
 import { Octokit } from "@octokit/core";
-const token ='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'
+const token = process.env.REACT_APP_YOUR_TOKEN 
 export const  getUser = async (username) => {
     try {
         const octokit = new Octokit({

@@ -40,7 +40,7 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
           yAxisName: 'Stars',
           yAxisNameFontSize: 16,
           xAxisName: 'Repos',
-          xAxisNameFontSize: 16,
+          xAxisNameFontSize: 14,
           showCanvasBorder: 0,
           showAlternateHGridColor: 0,
           usePlotGradientColor: 0,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Dashboard.css'
 import { useAuth0 } from "@auth0/auth0-react";
-import { getUser, getFollowers, getInfo, getLanguages} from '../../Services/services';
+import { getUser, getFollowers, getInfo} from '../../Services/services';
 import { Followers, LanguageGraph, User, UserStats, PopularGraph, Stats } from '../../components';
 import ForkedGraph from '../../components/ForkedGraph/ForkedGraph';
 import loadingImage from '../../images/preloader.gif'
@@ -28,24 +28,34 @@ const Dashboard = () => {
 
     useEffect(()=>{
        const data = getUser(searchWord)
-       const followers = getFollowers(searchWord)
-       const info = getInfo(searchWord)
-       
 
        data.then(function(resp){
-           setStatInfo(resp?.data)
-          //console.log(resp,"dattttttaaa")
+        setStatInfo(resp?.data)
+       console.log(resp,"dattttttaaa")
        }) 
-       followers.then(function(response){
-           setFollowers(response?.data)
-           //console.log(response, "responseeee")
-       })
-      
-       info.then(function(response){
-           setReposList(response?.data)
-           //console.log(response,'responseeeeeeeeeeeee')
-     })
-
+       
+     
+          data.then(function(resp){
+            setStatInfo(resp?.data)
+           console.log(resp,"dattttttaaa")
+           }) 
+           
+           const followers = getFollowers(searchWord)
+           const info = getInfo(searchWord)
+           
+    
+           
+           followers.then(function(response){
+               setFollowers(response?.data)
+               console.log(response, "responseeee")
+           })
+          
+           info.then(function(response){
+               setReposList(response?.data)
+               console.log(response,'responseeeeeeeeeeeee')
+         })
+    
+     console.log(isLoading, loading)
     },[])
     
     const displaySearch = async ()=>{

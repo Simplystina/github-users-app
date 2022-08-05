@@ -136,7 +136,39 @@
    }
    .user-btn{
       margin-bottom: 20px;
-      padding: 15px 50px;
+      padding: 10px 30px;
       border-radius: 20px;
   }
+  .user-content span p{
+    font-size: 14px;
+ }
+}
+@media screen and (max-width:295px) {
+    .user-heading-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .user-heading-text{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+    .user-content{
+        background-color: white;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .user-btn{
+        display: block;
+        margin: 10px auto;
+        background-color: azure;
+    }
+    .user-bio{
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .user-content span p{
+        font-size: 12px;
+     }
 }

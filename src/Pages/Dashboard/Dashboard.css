@@ -140,11 +140,15 @@ nav{
         width: 30px;
         height: 30px;
     }
+    
+    .navbar-info h3{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:320px) {
     .navbar-info h3{
-        font-size: 18px;
+        font-size: 14px;
     }
 
 }

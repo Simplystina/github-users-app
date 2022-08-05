@@ -4,13 +4,18 @@ import './index.css';
 import App from './App';
 import { Auth0Provider } from "@auth0/auth0-react";
 
+const domain = process.env.REACT_APP_YOUR_DOMAIN
+const client_id = process.env.REACT_APP_YOUR_DOMAIN
+
 const uri = 'https://githubappusers.netlify.app/dashboard'
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
+  
   <React.StrictMode>
     <Auth0Provider
-     domain= "dev-j-orriml.us.auth0.com"
-     clientId= "O6N22Hi1XIS6Y9V5eHzMHw8DTothoCs3"
+     domain= {domain}
+     clientId={client_id}
      redirectUri={uri}
      >
        <App />
