@@ -5,7 +5,7 @@ import App from './App';
 import { Auth0Provider } from "@auth0/auth0-react";
 
 const domain = process.env.REACT_APP_YOUR_DOMAIN
-const client_id = process.env.REACT_APP_YOUR_DOMAIN
+const client_id = process.env.REACT_APP_YOUR_CLIENT_ID
 
 const uri = 'https://githubappusers.netlify.app/dashboard'
 const root = ReactDOM.createRoot(document.getElementById('root'));
