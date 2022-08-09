@@ -9,6 +9,8 @@ const client_id = process.env.REACT_APP_YOUR_CLIENT_ID
 
 const uri = 'https://githubappusers.netlify.app/dashboard'
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+console.log(domain,"root", client_id, "variables")
 root.render(
   <React.StrictMode>
     <Auth0Provider

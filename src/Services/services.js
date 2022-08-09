@@ -1,6 +1,8 @@
 import { Octokit } from "@octokit/core";
 const token = process.env.REACT_APP_YOUR_TOKEN 
 console.log(token, "token")
+
+
 export const  getUser = async (username) => {
     try {
         const octokit = new Octokit({
